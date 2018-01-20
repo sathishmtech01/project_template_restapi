@@ -1,0 +1,33 @@
+Simple API System
+
+Prerequirements
+
+Modules Hierrachy:
+
+Main Deployment Module: API.py
+    Sub Module - API : API_Routing.py
+        Sub Module - Function : Functions_RuleBased.py
+                                Functions_ML.py
+                                Functions_Others.py
+                                API_Defaults.py
+
+Run: API.py
+
+C:\Users\dell\Anaconda3\python.exe D:/Sathish/Learning/CSK_Innovation/project_template_restapi/API.py
+01/20/2018 09:46:59 PM  * Restarting with stat
+01/20/2018 09:47:00 PM  * Debugger is active!
+01/20/2018 09:47:00 PM  * Debugger PIN: 758-312-595
+01/20/2018 09:47:00 PM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
+Test in PostMan API:
+
+POST /module2 HTTP/1.1
+Host: 127.0.0.1:5000
+Content-Type: application/json
+Cache-Control: no-cache
+Postman-Token: af394bf1-8fc8-6404-75c0-61fe7e42fa0e
+
+{"name":"csk",
+	"age":"27",
+	"sex":"male"
+}
